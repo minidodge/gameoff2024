@@ -606,6 +606,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7604234383694363927, guid: 6c6cf0d7aaa3be54585ab1dbe57020e7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1475551287}
+    - targetCorrespondingSourceObject: {fileID: 7604234383694363927, guid: 6c6cf0d7aaa3be54585ab1dbe57020e7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1475551290}
+    - targetCorrespondingSourceObject: {fileID: 7604234383694363927, guid: 6c6cf0d7aaa3be54585ab1dbe57020e7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1475551289}
   m_SourcePrefab: {fileID: 100100000, guid: 6c6cf0d7aaa3be54585ab1dbe57020e7, type: 3}
 --- !u!1 &105964520
 GameObject:
@@ -7096,6 +7102,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7119199588914407341, guid: 6c6cf0d7aaa3be54585ab1dbe57020e7, type: 3}
   m_PrefabInstance: {fileID: 96754136}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1475551289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475551286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9bc0ac0c0d2405dbb7ea8a3180ba774, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionForce: 5
+  explosionRadius: 5
+  upwardsModifier: 1
+  forceMode: 1
+--- !u!114 &1475551290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475551286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cd839f8a2cb303468bbba858c4671c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 1
+  isOneTimeUse: 0
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1475551289}
+        m_TargetAssemblyTypeName: ExplosionForce, Assembly-CSharp
+        m_MethodName: InvokeApplyExplosionForceAtPosition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1483792788 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7947437357882626727, guid: 8430dbcf8d1226541b78ae5c24961d8b, type: 3}
