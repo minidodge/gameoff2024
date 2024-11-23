@@ -2,7 +2,7 @@
 
 public class ExplosionForce : MonoBehaviour
 {
-    public float explosionForce = 1000f;
+    public float explosionForce = 5f;
     public float explosionRadius = 5f;
     public float upwardsModifier = 1f;
     public ForceMode forceMode = ForceMode.Impulse;
